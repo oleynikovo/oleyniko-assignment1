@@ -41,13 +41,13 @@ public final class R {
         public static final int claimStartDateTextView=0x7f090002;
         public static final int claimViewBackButton=0x7f090004;
         public static final int claimViewTextView=0x7f090003;
-        public static final int denoteApproved=0x7f090020;
-        public static final int denoteReturned=0x7f09001f;
-        public static final int denoteSubmitted=0x7f09001e;
+        public static final int denoteApproved=0x7f090021;
+        public static final int denoteReturned=0x7f090020;
+        public static final int denoteSubmitted=0x7f09001f;
         public static final int discardClaimButton=0x7f090008;
         public static final int discardItemButton=0x7f090018;
-        public static final int editClaim=0x7f09001b;
-        public static final int emailClaim=0x7f09001d;
+        public static final int editClaim=0x7f09001c;
+        public static final int emailClaim=0x7f09001e;
         public static final int itemAmount=0x7f090017;
         public static final int itemAmountTextView=0x7f090016;
         public static final int itemCategory=0x7f09000f;
@@ -59,7 +59,8 @@ public final class R {
         public static final int itemDescription=0x7f09000e;
         public static final int itemDescriptionTextView=0x7f090010;
         public static final int itemViewListView=0x7f090005;
-        public static final int removeClaim=0x7f09001c;
+        public static final int removeClaim=0x7f09001d;
+        public static final int removeItem=0x7f09001b;
         public static final int saveClaimButton=0x7f090007;
     }
     public static final class layout {

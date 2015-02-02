@@ -169,4 +169,16 @@ public class AddItemActivity extends Activity {
 			startActivity(intent);
 		}
 	}
+	
+	public void removeItem(MenuItem menu)
+	{
+		if (itemPos > -1)
+		{
+			ExpenseItem i = claims.get(claimPos).getExpenseItems().get(itemPos);
+			claims.get(claimPos).removeExpenseItem(i);
+			Intent intent = new Intent(AddItemActivity.this, ViewClaimActivity.class);
+			intent.putExtra("Position", claimPos);
+			startActivity(intent);
+		}
+	}
 }
