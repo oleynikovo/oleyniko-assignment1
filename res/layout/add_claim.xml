@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/saveClaimButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="saveClaim"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/discardClaimButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="cancelClaim"
+        android:text="@string/cancel" />
+
+    <EditText
+        android:id="@+id/claimStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/claimDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/claimStartDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="e.g. Where and Why" />
+
+    <TextView
+        android:id="@+id/claimStartDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/claimStartDate"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Start Date"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/claimEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saveClaimButton"
+        android:layout_alignLeft="@+id/claimStartDate"
+        android:layout_marginBottom="61dp"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/claimEndDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/claimEndDate"
+        android:layout_centerHorizontal="true"
+        android:text="Enter End Date"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/claimDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/claimDescription"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Description"
+        android:textSize="20sp" />
+
+</RelativeLayout>

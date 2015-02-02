@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/itemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/itemCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemDescriptionTextView"
+        android:layout_alignLeft="@+id/itemDescription"
+        android:layout_marginBottom="20dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/itemCategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemCategory"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Item Category" />
+
+    <EditText
+        android:id="@+id/itemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemCategoryTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/itemDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemDate"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Item Date" />
+
+    <TextView
+        android:id="@+id/itemCurrencyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/itemDescriptionTextView"
+        android:layout_below="@+id/itemDescription"
+        android:layout_marginTop="20dp"
+        android:text="Choose Currency" />
+
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="saveItem"
+        android:text="Add Item" />
+
+    <TextView
+        android:id="@+id/itemAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemAmount"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Amount Spent on Item" />
+
+    <TextView
+        android:id="@+id/itemDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/itemDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Enter Description" />
+
+    <EditText
+        android:id="@+id/itemAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addItemButton"
+        android:layout_alignLeft="@+id/itemDescription"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/discardItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="cancelItem"
+        android:text="Cancel" />
+
+    <Spinner
+        android:id="@+id/itemCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/itemAmountTextView"
+        android:layout_alignLeft="@+id/itemCurrencyTextView"
+        android:layout_alignRight="@+id/itemCurrencyTextView"
+        android:entries="@array/currencies" />
+
+</RelativeLayout>

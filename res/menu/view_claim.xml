@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.oleyniko_notes.ViewClaim" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    <item android:id="@+id/editClaim" android:title="Edit This Claim" android:onClick="editClaim"></item>
+    <item android:id="@+id/removeClaim" android:title="Delete This Claim" android:onClick="removeClaim"></item>
+    <item android:id="@+id/emailClaim" android:title="Email This Claim" android:onClick="emailClaim"></item>
+    <item android:id="@+id/denoteSubmitted" android:title="Denote Claim as Submitted" android:onClick="denoteSubmitted"></item>
+    <item android:id="@+id/denoteReturned" android:title="Denote Claim as Returned" android:onClick="denoteReturned"></item>
+    <item android:id="@+id/denoteApproved" android:title="Denote Claim as Approved" android:onClick="denoteApproved"></item>
+
+</menu>
