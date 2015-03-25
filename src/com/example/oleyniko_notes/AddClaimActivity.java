@@ -18,17 +18,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package com.example.oleyniko_notes;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.ParseException;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -52,7 +49,7 @@ public class AddClaimActivity extends Activity {
 		setContentView(R.layout.add_claim);
 		
 		// retrieve sent Claim Position from previous Activity
-		// adapted on January 30, 2015 from
+		// adapted on January 30, 2015 from the answer by William Tate at
 		// https://stackoverflow.com/questions/5265913/how-to-use-putextra-and-getextra-for-string-data
 		Intent intent = getIntent();
 		Bundle bundle = intent.getExtras();

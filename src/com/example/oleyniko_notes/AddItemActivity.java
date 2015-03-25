@@ -48,7 +48,7 @@ public class AddItemActivity extends Activity {
 		setContentView(R.layout.add_item);
 		
 		// retrieve sent Claim position and Item position from previous Activity
-		// adapted on January 30, 2015 from
+		// adapted on January 30, 2015 from from the answer by William Tate at
 		// https://stackoverflow.com/questions/5265913/how-to-use-putextra-and-getextra-for-string-data
 		Intent intent = getIntent();
 		Bundle bundle = intent.getExtras();

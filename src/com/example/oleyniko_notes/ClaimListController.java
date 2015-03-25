@@ -46,7 +46,7 @@ public class ClaimListController {
 	
 	// write/read the list to/from file
 	// pretty sure they do not work
-	// saving and loading copied on February 1, 2015 from
+	// saving and loading copied on February 1, 2015 from the answer by Ralkie at
 	// https://stackoverflow.com/questions/4118751/how-do-i-serialize-an-object-and-save-it-to-a-file-in-android
 	public static void saveToFile(Context context) throws IOException
 	{

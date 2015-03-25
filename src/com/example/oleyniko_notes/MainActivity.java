@@ -21,7 +21,6 @@ package com.example.oleyniko_notes;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Date;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -33,7 +32,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
@@ -51,13 +49,13 @@ public class MainActivity extends Activity {
         final ListView lv = (ListView) findViewById(R.id.claimListView);
         
         // set an array adapter for ArrayList of Claims, so that Android knows how to put its items in ListView
-        // custom "list item" format copied on January 31, 2015 from
+        // custom "list item" format copied on January 31, 2015 from the answer by Shereef Marzouk at
         // https://stackoverflow.com/questions/2464056/change-font-size-in-listview-android-eclipse
         ArrayAdapter<Claim> claimAdapter = new ArrayAdapter<Claim>(this, R.layout.custom_list_item, this.claims);
         lv.setAdapter(claimAdapter);
         
         // wait for an item to be clicked in ListView and send list position to View Claim Activity
-        // onItemClickListener copied on February 1, 2015 from
+        // onItemClickListener copied on February 1, 2015 from the answer by Maulik J at
         // https://stackoverflow.com/questions/9097723/adding-a-onclicklistener-to-listview-android
         lv.setOnItemClickListener( new OnItemClickListener() {
         	public void onItemClick(AdapterView<?> parent, View view, int position, long id)

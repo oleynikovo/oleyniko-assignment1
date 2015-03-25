@@ -18,16 +18,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 package com.example.oleyniko_notes;
 
+import java.io.Serializable;
+import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 import android.os.Parcel;
-import android.os.Parcelable;
-
-import java.io.Serializable;
-import java.text.DateFormat;
 
 public class Claim implements Serializable{
 

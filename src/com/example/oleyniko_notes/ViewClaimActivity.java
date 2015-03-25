@@ -19,7 +19,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 package com.example.oleyniko_notes;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -29,11 +28,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
 
 public class ViewClaimActivity extends Activity {
 	// Activity to view the selected claim from Main Activity
@@ -62,14 +61,14 @@ public class ViewClaimActivity extends Activity {
 			final ListView lv = (ListView) findViewById(R.id.itemViewListView);
 	        
 			// set an array adapter for ArrayList of ExpenseItems, so that Android knows how to put its items in ListView
-	        // custom list item copied on January 31, 2015 from
+	        // custom list item copied on January 31, 2015 from the answer by Shereef Marzouk at
 	        // https://stackoverflow.com/questions/2464056/change-font-size-in-listview-android-eclipse
 	        ArrayAdapter<ExpenseItem> claimAdapter = new ArrayAdapter<ExpenseItem>(this, R.layout.custom_list_item, c.getExpenseItems());
 	        lv.setAdapter(claimAdapter);
 	      
 	        // wait for an item to be clicked in ListView and send list position 
 	        // to Add Item Activity, which triples as View Item Activity and Edit Item Activity  
-	        // onItemClickListener copied on February 1, 2015 from
+	        // onItemClickListener copied on February 1, 2015 from the answer by Maulik J at
 	        // https://stackoverflow.com/questions/9097723/adding-a-onclicklistener-to-listview-android
 	        lv.setOnItemClickListener( new OnItemClickListener() {
 	        	public void onItemClick(AdapterView<?> parent, View view, int position, long id)
@@ -141,7 +140,7 @@ public class ViewClaimActivity extends Activity {
 	 public void emailClaim(MenuItem menu)
 	 {
 		 // try and send an e-mail from within the application
-		 // Copied on February 2, 2015 from
+		 // Copied on February 2, 2015 from the answer by Igor Popov at
 		 // https://stackoverflow.com/questions/8284706/send-email-via-gmail
 		 String emailBody = claims.get(id).toString() + "\nItems:\n";
 		 for (ExpenseItem ei : claims.get(id).getExpenseItems())

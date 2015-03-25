@@ -23,8 +23,6 @@ import java.text.DateFormat;
 import java.util.Date;
 
 import android.os.Parcel;
-import android.os.Parcelable;
-import android.os.Parcelable.Creator;
 
 public class ExpenseItem implements Serializable{
 
